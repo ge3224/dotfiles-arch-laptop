@@ -1,0 +1,20 @@
+---
+
+- name: bijiben
+  hosts: hosts
+  connection: local
+  gather_facts: false
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  vars_prompt:
+    - name: username
+      prompt: What is your username?
+      private: no
+    - name: ansible_become_password
+      prompt: Enter sudo password
+      private: yes
+  tasks:
+    - name: install core packages
+      include_tasks: tasks/core.yml
+    - name: set up i3
+      include_tasks: tasks/i3.yml
