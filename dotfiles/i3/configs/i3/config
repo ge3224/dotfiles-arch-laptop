@@ -32,12 +32,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # exec --no-startup-id nm-applet
 
 exec --no-startup-id fcitx -d
-
-# exec --no-startup-id xsetwacom --set "Wacom Graphire2 4x5 Pen stylus" Mode Relative
-
-# exec --no-startup-id megasync
-
-# exec --no-startup-id dropbox
+exec --no-startup-id nitrogen --restore &
+exec --no-startup-id picom &
+exec --no-startup-id udiskie &
 
 # bindsym $mod+F10 exec --no-startup-id amixer set Master 5%+
 # bindsym $mod+F9 exec --no-startup-id amixer set Master 5%-
@@ -234,7 +231,7 @@ bindsym XF86MonBrightnessDown exec sudo light -U 10
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Laptop Screen (eDP-1) on the left
-exec --no-startup-id xrandr --output eDP-1 --primary --pos 0x0
+exec --no-startup-id xrandr --output eDP-1 --primary --pos 0x0 --dpi 144
 
 # External Monitor (HDMI-2) to the right of the laptop screen
-exec --no-startup-id xrandr --output HDMI-2 --pos 1920x0 --mode 3840x2160 --dpi 144
+exec --no-startup-id xrandr --output HDMI-2 --pos 1920x0 --mode 3840x2160
