@@ -1,0 +1,9 @@
+- name: Install prefered system fonts package using pacman
+  become: yes
+  pacman:
+    name: 
+      - ttf-jetbrains-mono-nerd
+      - ttf-freefont
+      - ttf-arphic-uming
+      - ttf-baekmuk
+    state: present
