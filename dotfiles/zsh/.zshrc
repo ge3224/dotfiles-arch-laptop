@@ -1,11 +1,12 @@
 #!/bin/zsh
 
-# eval `gnome-keyring-daemon --start`
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(ssh-agent -s)" > /dev/null
+fi
 
-key_chain="keychain"
-
-if command -v $key_chain &> /dev/null; then
-  eval $(keychain --eval --quiet id_ed25519 ~/.ssh/id_ed25519)
+ssh-add -l &>/dev/null
+if [ $? -eq 1 ]; then
+    [ -f ~/.ssh/id_ed25519 ] && ssh-add ~/.ssh/id_ed25519 > /dev/null 2>&1
 fi
 
 # If not running interactively, don't do anything
