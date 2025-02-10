@@ -1,0 +1,59 @@
+- name: Install basic utils, shells, apps
+  become: yes
+  community.general.pacman:
+    name:
+      - vlc
+      - brightnessctl
+      - ripgrep
+      - tree
+      - rsync
+      - bleachbit
+    state: present
+
+- name: Install archival utils
+  become: yes
+  community.general.pacman:
+    name: 
+      - atool
+      - p7zip
+      - unrar
+      - unzip
+      - xz
+      - zip
+      - bzip2
+      - gzip
+      - tar
+    state: present
+
+- name: Install download utils
+  become: yes
+  community.general.pacman:
+    name:
+      - curl
+      - wget
+      - aria2
+    state: present
+
+- name: Install xclip for Neovim to access clipboard
+  become: yes
+  community.general.pacman:
+    name:
+      - xclip
+    state: present
+
+- name: Install core imaging apps
+  become: yes
+  community.general.pacman:
+    name:
+      - imagemagick
+      - nitrogen
+      - redshift
+      - picom
+    state: present
+
+- name: Install Syncthing
+  become: yes
+  community.general.pacman:
+    name:
+      - syncthing
+    state: present
