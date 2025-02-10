@@ -1,4 +1,4 @@
-- name: Install language tools available in community packages
+- name: Install i3, i3status and dmenu if not present
   become: true
   community.general.pacman:
     name:

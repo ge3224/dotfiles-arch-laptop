@@ -47,8 +47,8 @@ exec --no-startup-id fcitx -d
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
-# bindsym $mod+Return exec ghostty
+# bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec ghostty
 
 # kill focused window
 bindsym $mod+Shift+q kill
