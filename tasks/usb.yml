@@ -1,0 +1,10 @@
+# Configure convenient USB mounting
+- name: Install usb utils
+  community.general.pacman:
+    name:
+      - udisks2 
+      - udiskie
+      - usbutils # for detecting a printer
+    state: present
+  become: yes
+
