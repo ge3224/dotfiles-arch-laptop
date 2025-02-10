@@ -25,22 +25,11 @@ unsetopt beep
 
 # Variables
 export EDITOR="nvim"
-export TERMINAL="ghostty"
-export BROWSER="zen-browser"
 export PATH="$HOME/.local/bin":$PATH
-export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$PATH:/usr/local/go/bin
-export PATH="$HOME/.local/share/neovim/bin":$PATH
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
 
-alias df='df -h'     # human-readable sizes
-alias free='free -m' # show sizes in MB
 alias ls='ls --color=auto'
-alias nc="/home/ge/projects/neocities/main/target/release/neocities_cli"
-alias pip='pip3.9'
 alias vim='nvim'
-alias air='/home/bijiben/go/bin/air'
 
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -96,12 +85,3 @@ elif [[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; th
   . /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   highlighting_tweak
 fi
-
-# pnpm
-export PNPM_HOME="/home/bijiben/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-. "/home/bijiben/.deno/env"
