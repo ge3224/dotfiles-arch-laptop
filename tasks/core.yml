@@ -10,6 +10,8 @@
       - tree
       - rsync
       - bleachbit
+      - xorg-xrandr
+      - less
     state: present
 
 - name: Install archival utils
