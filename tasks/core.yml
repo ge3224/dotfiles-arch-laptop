@@ -55,9 +55,10 @@
       - picom
     state: present
 
-- name: Install Syncthing
+- name: Notes sync
   become: yes
   community.general.pacman:
     name:
+      - obsidian
       - syncthing
     state: present
