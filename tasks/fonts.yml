@@ -1,3 +1,5 @@
+---
+
 - name: Install prefered system fonts package using pacman
   become: yes
   pacman:

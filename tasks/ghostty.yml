@@ -1,4 +1,5 @@
 ---
+
 - name: Install ghostty if not present
   become: true
   community.general.pacman:

@@ -209,8 +209,5 @@ bindsym XF86MonBrightnessDown exec sudo light -U 10
 # Define keybinding for toggling mute/unmute
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# Laptop Screen (eDP-1) on the left
-exec --no-startup-id xrandr --output eDP-1 --primary --pos 0x0 --dpi 144
-
-# External Monitor (HDMI-2) to the right of the laptop screen
-exec --no-startup-id xrandr --output HDMI-2 --pos 1920x0 --mode 3840x2160
+# Conditionally configure screens
+exec --no-startup-id /usr/local/bin/screens.sh

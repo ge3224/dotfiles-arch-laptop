@@ -1,3 +1,13 @@
+---
+
+- name: Create symlink for monitor switch script
+  file:
+    src: "{{ playbook_dir }}/scripts/screens.sh"
+    dest: "/usr/local/bin/screens.sh"
+    state: link
+    mode: '0755'
+  become: true
+
 - name: Install i3, i3status and dmenu if not present
   become: true
   community.general.pacman:
