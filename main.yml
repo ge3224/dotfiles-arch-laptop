@@ -20,6 +20,8 @@
       include_tasks: tasks/core.yml
     - name: turn capslock into second esc key
       include_tasks: tasks/keyboard.yml
+    - name: add Xresources config
+      include_tasks: tasks/xresources.yml
     - name: install fonts 
       include_tasks: tasks/fonts.yml
     - name: install & configure zsh

@@ -9,3 +9,9 @@
       - ttf-arphic-uming
       - ttf-baekmuk
     state: present
+
+- name: Create symlink to font config
+  file:
+    src: "{{ playbook_dir }}/dotfiles/fontconfig/fonts.conf"
+    dest: /home/{{ username }}/.config/fontconfig/fonts.conf
+    state: link
