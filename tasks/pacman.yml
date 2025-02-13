@@ -20,7 +20,7 @@
   notify: Update pacman cache
   when: pacman.repos is defined
 
-- name: Run system update # sudo pacman -Syu
+- name: Run system update
   become: yes
   community.general.pacman:
     update_cache: true

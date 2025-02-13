@@ -14,6 +14,8 @@
       prompt: Enter sudo password
       private: yes
   tasks:
+    - name: configure pacman & update
+      include_tasks: tasks/pacman.yml
     - name: install core packages
       include_tasks: tasks/core.yml
     - name: turn capslock into second esc key
