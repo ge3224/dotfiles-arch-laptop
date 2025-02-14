@@ -19,3 +19,6 @@
 [submodule "aur/clickup-desktop"]
 	path = aur/clickup-desktop
 	url = https://aur.archlinux.org/clickup-desktop.git
+[submodule "aur/cheat-bin"]
+	path = aur/cheat-bin
+	url = https://aur.archlinux.org/cheat-bin.git
