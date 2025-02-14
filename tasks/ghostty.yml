@@ -12,7 +12,7 @@
     path: /home/{{ username }}/.config/ghostty
   register: p
 
-- name: check if ghostty config that is not a symlink
+- name: check for ghostty config that is not a symlink
   ansible.builtin.file:
     path: /home/{{ username }}/.config/ghostty
     state: absent
