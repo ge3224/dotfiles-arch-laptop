@@ -6,6 +6,7 @@
   gather_facts: false
   vars:
     ansible_python_interpreter: /usr/bin/python3
+    force_update: false
   vars_prompt:
     - name: username
       prompt: What is your username?
@@ -14,6 +15,8 @@
       prompt: Enter sudo password
       private: yes
   tasks:
+    - name: bring in git submodules
+      include_tasks: tasks/submodules.yml
     - name: configure pacman & update
       include_tasks: tasks/pacman.yml
     - name: install core packages
