@@ -22,3 +22,6 @@
 [submodule "aur/cheat-bin"]
 	path = aur/cheat-bin
 	url = https://aur.archlinux.org/cheat-bin.git
+[submodule "dotfiles/cheatsheets"]
+	path = dotfiles/cheatsheets
+	url = git@github.com:ge3224/cheatsheets.git
