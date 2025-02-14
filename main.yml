@@ -41,3 +41,5 @@
       include_tasks: tasks/nvim.yml
     - name: automate usb mounting
       include_tasks: tasks/usb.yml
+    - name: set up cli cheatsheets
+      include_tasks: tasks/cheat.yml
