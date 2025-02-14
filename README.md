@@ -76,7 +76,7 @@ cd dotfiles-arch-laptop
 2. Run the playbook:
 
 ```bash
-ansible-playbook -i inventory.ini main.yml
+ansible-playbook main.yml
 ```
 
 
