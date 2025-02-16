@@ -12,6 +12,7 @@
       - bleachbit
       - xorg-xrandr
       - less
+      - termdown
     state: present
 
 - name: Install archival utils
