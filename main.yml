@@ -25,6 +25,8 @@
       include_tasks: tasks/keyboard.yml
     - name: add Xresources config
       include_tasks: tasks/xresources.yml
+    - name: implement Arch recommendations for T480
+      include_tasks: tasks/t480_recommendations.yml
     - name: install fonts 
       include_tasks: tasks/fonts.yml
     - name: install & configure zsh
