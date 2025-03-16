@@ -90,3 +90,4 @@ elif [[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; th
   . /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   highlighting_tweak
 fi
+export PATH=$PATH:$HOME/go/bin
