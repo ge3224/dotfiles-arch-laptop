@@ -47,12 +47,12 @@
       [Unit]
       Description=Disable BD PROCHOT throttling
       After=multi-user.target
-      
+
       [Service]
       Type=oneshot
       ExecStart=/usr/local/bin/throttlestop
       RemainAfterExit=yes
-      
+
       [Install]
       WantedBy=multi-user.target
 
