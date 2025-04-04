@@ -91,3 +91,4 @@ elif [[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; th
   highlighting_tweak
 fi
 export PATH=$PATH:$HOME/go/bin
+. "/home/ge/.deno/env"
