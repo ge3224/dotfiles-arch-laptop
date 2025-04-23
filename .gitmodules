@@ -31,3 +31,6 @@
 [submodule "aur/tailwindcss-cli"]
 	path = aur/tailwindcss-cli
 	url = https://aur.archlinux.org/tailwindcss-cli.git
+[submodule "aur/figma-linux-bin"]
+	path = aur/figma-linux-bin
+	url = https://aur.archlinux.org/figma-linux-bin.git
