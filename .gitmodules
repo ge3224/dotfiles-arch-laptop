@@ -34,3 +34,6 @@
 [submodule "aur/figma-linux-bin"]
 	path = aur/figma-linux-bin
 	url = https://aur.archlinux.org/figma-linux-bin.git
+[submodule "aur/xnviewmp"]
+	path = aur/xnviewmp
+	url = https://aur.archlinux.org/xnviewmp.git
