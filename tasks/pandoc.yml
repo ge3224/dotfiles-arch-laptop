@@ -1,0 +1,10 @@
+---
+
+- name: Install pandoc
+  become: yes
+  community.general.pacman:
+    name:
+      - pandoc-cli
+      - texlive-basic
+      - texlive-latex
+    state: present

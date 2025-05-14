@@ -45,3 +45,5 @@
       include_tasks: tasks/usb.yml
     - name: set up cli cheatsheets
       include_tasks: tasks/cheat.yml
+    - name: set up pandoc
+      include_tasks: tasks/pandoc.yml
