@@ -4,10 +4,19 @@
   become: yes
   pacman:
     name: 
-      - ttf-jetbrains-mono-nerd
-      - ttf-freefont
+      - gnu-free-fonts
+      - noto-fonts
       - ttf-arphic-uming
       - ttf-baekmuk
+      - ttf-croscore
+      - ttf-dejavu
+      - ttf-freefont
+      - ttf-ibm-plex
+      - ttf-input
+      - ttf-jetbrains-mono-nerd
+      - ttf-liberation
+      - ttf-input-nerd
+      - ttf-roboto
     state: present
 
 - name: Create symlink to font config
