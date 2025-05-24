@@ -4,7 +4,9 @@
   become: yes
   community.general.pacman:
     name:
-      - pandoc-cli
-      - texlive-basic
-      - texlive-latex
+      - pandoc
+      - texlive-core
+      - texlive-bin
+      - texlive-latexextra
+      - texlive-fontsrecommended
     state: present
