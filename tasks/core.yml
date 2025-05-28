@@ -7,12 +7,14 @@
       - vlc
       - brightnessctl
       - ripgrep
+      - fd
       - tree
       - rsync
       - bleachbit
       - xorg-xrandr
       - less
       - termdown
+      - luarocks
     state: present
 
 - name: Install archival utils
