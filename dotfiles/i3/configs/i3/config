@@ -20,6 +20,7 @@ font pango:JetBrainsMono Nerd Font 10
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+exec --no-startup-id /usr/local/bin/screens.sh >> ~/Downloads/i3_startup.log 2>&1
 exec --no-startup-id nitrogen --restore &
 exec --no-startup-id picom &
 exec --no-startup-id udiskie &
@@ -198,6 +199,3 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 default_border pixel 0
 # gaps inner 5px
-
-# control zoom popups https://www.reddit.com/r/i3wm/comments/mcwpur/how_do_i_make_zoom_notification_popups_floating/
-# for_window [title="^zoom$"] floating enable
