@@ -37,3 +37,6 @@
 [submodule "aur/xnviewmp"]
 	path = aur/xnviewmp
 	url = https://aur.archlinux.org/xnviewmp.git
+[submodule "aur/gemini-cli"]
+	path = aur/gemini-cli
+	url = https://aur.archlinux.org/gemini.git
