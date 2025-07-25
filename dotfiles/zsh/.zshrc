@@ -92,3 +92,12 @@ elif [[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; th
 fi
 export PATH=$PATH:$HOME/go/bin
 . "/home/ge/.deno/env"
+# pnpm
+export PNPM_HOME="/home/ge/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+export PATH=~/.pnpm-global/bin:$PATH
+# pnpm end
+export PATH=~/.npm-global/bin:$PATH
