@@ -40,3 +40,6 @@
 [submodule "aur/gemini-cli"]
 	path = aur/gemini-cli
 	url = https://aur.archlinux.org/gemini.git
+[submodule "aur/rustdesk"]
+	path = aur/rustdesk
+	url = https://aur.archlinux.org/rustdesk-bin.git
