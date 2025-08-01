@@ -43,3 +43,6 @@
 [submodule "aur/rustdesk"]
 	path = aur/rustdesk
 	url = https://aur.archlinux.org/rustdesk-bin.git
+[submodule "aur/claude-code"]
+	path = aur/claude-code
+	url = https://aur.archlinux.org/claude-code.git
