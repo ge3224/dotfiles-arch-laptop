@@ -39,11 +39,13 @@
       include_tasks: tasks/tmux.yml
     - name: install dev tools
       include_tasks: tasks/dev.yml
-    - name: configure neovim 
-      include_tasks: tasks/nvim.yml
+    # - name: configure neovim 
+    #   include_tasks: tasks/nvim.yml
     - name: automate usb mounting
       include_tasks: tasks/usb.yml
     - name: set up cli cheatsheets
       include_tasks: tasks/cheat.yml
     - name: set up pandoc
       include_tasks: tasks/pandoc.yml
+    - name: set up printing with CUPS
+      include_tasks: tasks/printing.yml
