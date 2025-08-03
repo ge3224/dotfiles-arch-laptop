@@ -46,3 +46,6 @@
 [submodule "aur/claude-code"]
 	path = aur/claude-code
 	url = https://aur.archlinux.org/claude-code.git
+[submodule "aur/proton-mail"]
+	path = aur/proton-mail
+	url = https://aur.archlinux.org/proton-mail-bin.git
