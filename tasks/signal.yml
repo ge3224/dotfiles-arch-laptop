@@ -1,0 +1,7 @@
+---
+
+- name: Install signal-desktop
+  become: yes
+  community.general.pacman:
+    name: signal-desktop
+    state: present

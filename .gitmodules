@@ -10,9 +10,6 @@
 [submodule "aur/postman-bin"]
 	path = aur/postman-bin
 	url = https://aur.archlinux.org/postman-bin.git
-[submodule "aur/signal-desktop-beta-bin"]
-	path = aur/signal-desktop-beta-bin
-	url = https://aur.archlinux.org/signal-desktop-beta-bin.git
 [submodule "aur/slack-desktop"]
 	path = aur/slack-desktop
 	url = https://aur.archlinux.org/slack-desktop.git

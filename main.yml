@@ -37,10 +37,12 @@
       include_tasks: tasks/i3.yml
     - name: install & configure tmux 
       include_tasks: tasks/tmux.yml
+    - name: install signal desktop
+      include_tasks: tasks/signal.yml
     - name: install dev tools
       include_tasks: tasks/dev.yml
-    # - name: configure neovim 
-    #   include_tasks: tasks/nvim.yml
+    - name: configure neovim 
+      include_tasks: tasks/nvim.yml
     - name: automate usb mounting
       include_tasks: tasks/usb.yml
     - name: set up cli cheatsheets
