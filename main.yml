@@ -39,6 +39,8 @@
       include_tasks: tasks/tmux.yml
     - name: install signal desktop
       include_tasks: tasks/signal.yml
+    - name: install tailscale
+      include_tasks: tasks/tailscale.yml
     - name: install dev tools
       include_tasks: tasks/dev.yml
     - name: configure neovim 
